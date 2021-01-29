@@ -1,0 +1,3 @@
+C:/Users/jeffr/CLionProjects/QRcode/cmake-build-debug/CMakeFiles/QRcode.dir
+C:/Users/jeffr/CLionProjects/QRcode/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jeffr/CLionProjects/QRcode/cmake-build-debug/CMakeFiles/rebuild_cache.dir

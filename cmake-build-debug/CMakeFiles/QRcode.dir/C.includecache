@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jeffr/CLionProjects/QRcode/main.c
+assert.h
+-
+limits.h
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+qrcodegen.c
+C:/Users/jeffr/CLionProjects/QRcode/qrcodegen.c
+
+C:/Users/jeffr/CLionProjects/QRcode/qrcodegen.c
+assert.h
+-
+limits.h
+-
+stdlib.h
+-
+string.h
+-
+qrcodegen.h
+C:/Users/jeffr/CLionProjects/QRcode/qrcodegen.h
+
+C:/Users/jeffr/CLionProjects/QRcode/qrcodegen.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
