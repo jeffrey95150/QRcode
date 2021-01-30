@@ -2,9 +2,9 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
-//#include <string.h>
+#include <string.h>
 #include <SDL.h>
-#include "qrcodegen.c"
+#include "qrcodegen.h"
 
 
 // Function prototypes
