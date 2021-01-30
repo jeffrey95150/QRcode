@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+//#include <string.h>
 #include <SDL.h>
 #include "qrcodegen.c"
 
@@ -14,15 +14,17 @@ static void printQr(const uint8_t qrcode[], int size_screen, int size_pix);
 static void pause();
 
 
+static void SDL_WM_SetCaption(char string[8], void *pVoid);
+
+static SDL_Surface *SDL_SetVideoMode(int screen, int screen1, int i, int hwsurface);
+
+static void SDL_Flip(SDL_Surface *pSurface);
+
 // The main application program.
-int main(void) {
+int main(int argc, char *argv[]) {
     doBasicDemo();
     return EXIT_SUCCESS;
 }
-
-
-
-/*---- Demo suite ----*/
 
 // Creates a single QR Code, then prints it to the console.
 static void doBasicDemo(void) {
@@ -54,6 +56,7 @@ static void printQr(const uint8_t qrcode[], int size_screen, int size_pix) {
     }
 
 
+    int SDL_HWSURFACE;
     screen = SDL_SetVideoMode(size_screen, size_screen, 8, SDL_HWSURFACE);
     SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, 17, 206, 112));
     if (screen == NULL)
@@ -88,10 +91,23 @@ static void printQr(const uint8_t qrcode[], int size_screen, int size_pix) {
     SDL_Quit();
 }
 
+static void SDL_Flip(SDL_Surface *pSurface) {
+
+}
+
+static SDL_Surface *SDL_SetVideoMode(int screen, int screen1, int i, int hwsurface) {
+    return NULL;
+}
+
+static void SDL_WM_SetCaption(char string[8], void *pVoid) {
+
+}
+
 
 void black_square(SDL_Surface *screen, SDL_Rect position, int size_pix)
 {
     SDL_Surface *rect = NULL;
+    Uint32 SDL_HWSURFACE;
     rect = SDL_CreateRGBSurface(SDL_HWSURFACE, size_pix, size_pix, 8, 0, 0, 0, 0);
     if (rect == NULL)
     {
@@ -102,16 +118,13 @@ void black_square(SDL_Surface *screen, SDL_Rect position, int size_pix)
     SDL_BlitSurface(rect, NULL, screen, &position);
 }
 
-void pause()
-{
+void pause() {
     int continuer = 1;
     SDL_Event event;
 
-    while (continuer)
-    {
+    while (continuer) {
         SDL_WaitEvent(&event);
-        switch(event.type)
-        {
+        switch (event.type) {
             case SDL_QUIT:
                 continuer = 0;
         }

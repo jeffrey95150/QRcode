@@ -93,12 +93,12 @@ clean: CMakeFiles/QRcode.dir/clean
 CMakeFiles/QRcode.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRcode.dir\build.make CMakeFiles/QRcode.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRcode.dir\build.make CMakeFiles/QRcode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jeffr\CLionProjects\QRcode\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target QRcode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\jeffr\CLionProjects\QRcode\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target QRcode"
 .PHONY : CMakeFiles/QRcode.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/QRcode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jeffr\CLionProjects\QRcode\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jeffr\CLionProjects\QRcode\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/QRcode.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jeffr\CLionProjects\QRcode\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/QRcode.dir/rule

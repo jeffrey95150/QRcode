@@ -196,33 +196,6 @@ qrcodegen.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRcode.dir\build.make CMakeFiles/QRcode.dir/qrcodegen.c.s
 .PHONY : qrcodegen.c.s
 
-reader.obj: reader.c.obj
-
-.PHONY : reader.obj
-
-# target to build an object file
-reader.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRcode.dir\build.make CMakeFiles/QRcode.dir/reader.c.obj
-.PHONY : reader.c.obj
-
-reader.i: reader.c.i
-
-.PHONY : reader.i
-
-# target to preprocess a source file
-reader.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRcode.dir\build.make CMakeFiles/QRcode.dir/reader.c.i
-.PHONY : reader.c.i
-
-reader.s: reader.c.s
-
-.PHONY : reader.s
-
-# target to generate assembly for a file
-reader.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\QRcode.dir\build.make CMakeFiles/QRcode.dir/reader.c.s
-.PHONY : reader.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -238,9 +211,6 @@ help:
 	@echo ... qrcodegen.obj
 	@echo ... qrcodegen.i
 	@echo ... qrcodegen.s
-	@echo ... reader.obj
-	@echo ... reader.i
-	@echo ... reader.s
 .PHONY : help
 
 

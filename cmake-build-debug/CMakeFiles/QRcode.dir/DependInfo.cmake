@@ -6,12 +6,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/jeffr/CLionProjects/QRcode/main.c" "C:/Users/jeffr/CLionProjects/QRcode/cmake-build-debug/CMakeFiles/QRcode.dir/main.c.obj"
   "C:/Users/jeffr/CLionProjects/QRcode/qrcodegen.c" "C:/Users/jeffr/CLionProjects/QRcode/cmake-build-debug/CMakeFiles/QRcode.dir/qrcodegen.c.obj"
-  "C:/Users/jeffr/CLionProjects/QRcode/reader.c" "C:/Users/jeffr/CLionProjects/QRcode/cmake-build-debug/CMakeFiles/QRcode.dir/reader.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../SDL2/include"
   )
 
 # Targets to which this target links.
