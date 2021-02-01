@@ -29,7 +29,7 @@ int main(void) {
 
 // Creates a single QR Code, then prints it to the console.
 static void doBasicDemo(void) {
-    const char *text = "Hello, world!";                // User-supplied text
+    const char *text = "OCEANE";                // User-supplied text
     enum qrcodegen_Ecc errCorLvl = qrcodegen_Ecc_LOW;  // Error correction level
 
     // Make and print the QR Code symbol
